@@ -10,3 +10,5 @@ Assignment-2
 
 Assignment-3
 1. orphan_process.c
+2. zombie_process.c
+3. multiprocess.c
