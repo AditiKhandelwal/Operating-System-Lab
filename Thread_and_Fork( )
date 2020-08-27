@@ -1,3 +1,5 @@
+// Same thread id is printed in parent and child process.
+
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <unistd.h>  . 
