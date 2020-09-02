@@ -12,3 +12,11 @@ Assignment-3
 1. orphan_process.c
 2. zombie_process.c
 3. multiprocess.c
+
+Assignment-4
+1. Thread_and_Fork().c
+
+Assignment-5
+1. fibonacci_using_thread.c
+2. variables_in_thread.c
+
