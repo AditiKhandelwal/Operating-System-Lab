@@ -38,8 +38,6 @@ int main()
 {
     struct fib obj;
     scanf("%d" , &obj.n);
-    
-    
     pthread_t thread;
     printf("Before thread\n");
     pthread_create(&thread, NULL, myThread, &obj);
