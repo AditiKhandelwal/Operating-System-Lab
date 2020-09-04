@@ -1,5 +1,9 @@
 # Operating-System-Lab
 
+Subject Code : CSE 317
+Subject Coordinator : Prof. Vijay Bhaskar
+Semester : 5th
+
 Assignment-1
 1. fibonacc-_fork.c
 2. parent_child_id.c
