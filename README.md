@@ -25,6 +25,6 @@ Assignment-5
 2. variables_in_thread.c
 
 Assignment-6
-1. semaphore.c
+1. binary_semaphore.c , counting_semaphore.c
 2. peterson.c
 3. race_condition.c
