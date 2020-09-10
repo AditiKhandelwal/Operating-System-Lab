@@ -1,30 +1,63 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <pthread.h>
-#include <signal.h>
-#include <semaphore.h>
-#include <unistd.h>
-sem_t s;
-void handler(int signal)
+typedef struct semaphore{
+    int s;
+}semaphore;
+semaphore S;
+void P()
 {
-    sem_post(&s);
+    while(S.s<=0);
+    S.s--;
 }
-void *func(void *param)
+void V()
 {
-    sem_wait(&s);
-    printf("I had to wait until your signal released me!\n");
+    S.s++;
 }
-
+void* fun1()
+{
+    P(); 
+    int t=5;
+    while(t--)
+    printf("Process 1\n");
+    V(); 
+}
+void* fun2()
+{
+    P();
+    int t=5;
+    while(t--)
+    printf("Process 2\n");
+    V();
+}
+void* fun3()
+{
+    P();
+    int t=5;
+    while(t--)
+    printf("Process 3\n");
+    V();
+}
+void* fun4()
+{
+    
+    P();
+    int t=5;
+    while(t--)
+    printf("Process 4\n");
+    V();
+}
 int main()
 {
-    int ok = sem_init(&s, 0, 0);
-    if (ok == -1) {
-       perror("Could not create unnamed semaphore");
-       return 1;
-    }
-    signal(SIGINT, handler);
-
-    pthread_t id;
-    pthread_create(&id, NULL, func, NULL);
-    //exits jb thread nahi bachengi
-    pthread_exit(NULL);
+    pthread_t t1,t2,t3,t4;
+    S.s=3;
+    pthread_create(&t1,NULL,fun1,NULL); 
+    pthread_create(&t2,NULL,fun2,NULL); 
+    pthread_create(&t3,NULL,fun3,NULL);
+    pthread_create(&t4,NULL,fun4,NULL);
+    pthread_join(t1,NULL); 
+    pthread_join(t2,NULL); 
+    pthread_join(t3,NULL);
+    pthread_join(t4,NULL);
+    return 0;
 }
