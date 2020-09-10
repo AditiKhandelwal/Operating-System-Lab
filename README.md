@@ -24,3 +24,7 @@ Assignment-5
 1. fibonacci_using_thread.c
 2. variables_in_thread.c
 
+Assignment-6
+1. semaphore.c
+2. peterson.c
+3. race_condition.c
