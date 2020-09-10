@@ -5,8 +5,7 @@ int turn;
 int flag[2];
 int main(void)
 {
-        int turn;
-        int flag[2];
+        
         int pid =fork();
         int t =10;
         while(t--)
