@@ -32,3 +32,6 @@ Assignment-6
 Assignment-7
 1. producer_consumer.c
 2. reader_writer.c
+
+Assignment-8
+1. LAB8_diningPhilosopher_using_Semaphores
