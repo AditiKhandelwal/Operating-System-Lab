@@ -31,7 +31,7 @@ int main()
      for(int i =0;i<n;i++)
     {
         for(int j =0;j<r;j++){
-        cout<<"Enter number of resources of type "<<(char)(65+j)<<" for process P"<<i<<"\n";
+        cout<<"Enter total number of resources of type "<<(char)(65+j)<<" required for process P"<<i<<"\n";
         cin>>max[i][j];
         }
     }
