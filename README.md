@@ -34,4 +34,7 @@ Assignment-7
 2. reader_writer.c
 
 Assignment-8
-1. LAB8_diningPhilosopher_using_Semaphores
+1. diningPhilosopher_using_Semaphores.c
+
+Assignment-9
+1. Banker'sAlgorithm.cpp
