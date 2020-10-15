@@ -41,3 +41,4 @@ Assignment-9
 
 Assignment-10
 1. FCFS.cpp
+2. SJF.cpp
