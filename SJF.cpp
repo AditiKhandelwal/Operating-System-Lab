@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
   
 int main() 
@@ -10,7 +10,7 @@ int main()
       int burst[n];
       int arrival[n];
       int turn[n];
-      int remaining[n];
+      int remaining[n+1];
        for(int i =0;i<n;i++)
         {
             cout<<"Enter burst time for process P"<<i<<"\n";
@@ -20,13 +20,14 @@ int main()
             remaining[i]=burst[i];
         }
       int count =0;
-      int smallest =n-1;
+      int smallest =n;
+      remaining[n]=INT_MAX;
       double wait_time = 0, turnaround_time = 0, end;
       float average_waiting_time, average_turnaround_time;
      
       for(int time = 0; count != n; time++)
       {
-            smallest = n-1;
+            smallest = n;
             for(int i = 0; i < n; i++)
             {
                   if(arrival[i] <= time && remaining[i] < remaining[smallest] && remaining[i] > 0)
