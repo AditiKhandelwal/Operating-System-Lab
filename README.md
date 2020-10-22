@@ -44,3 +44,8 @@ Assignment-10
 2. SJF.cpp
 3. Priority.cpp
 4. Round_Robin.cpp
+
+Assignment-11
+1. fcfs_disk_scheduling.c
+2. stsf_disk_scheduling.c
+3. c-scan_disk_scheduling.c
