@@ -49,3 +49,4 @@ Assignment-11
 1. fcfs_disk_scheduling.c
 2. sstf_disk_scheduling.c
 3. c-scan_disk_scheduling.c
+4. scan_disk_scheduling.c
